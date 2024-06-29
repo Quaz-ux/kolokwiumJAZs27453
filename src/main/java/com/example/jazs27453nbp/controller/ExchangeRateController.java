@@ -34,3 +34,4 @@ public class ExchangeRateController {
         return ResponseEntity.ok(rate);
     }
 }
+
