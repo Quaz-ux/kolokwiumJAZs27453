@@ -7,7 +7,6 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import java.time.LocalDate;
 
 @RestController
@@ -20,7 +19,7 @@ public class ExchangeRateController {
         this.service = service;
     }
 
-    @Operation(summary = "Get avg exchange rate", description = "Zwraca srednia exchange rate dla danej waluty")
+    @Operation(summary = "Get avg exchange rate", description = "Retunrs avg exchange rate of currency and date range")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "OK"),
             @ApiResponse(responseCode = "400", description = "Bad Request"),
